@@ -7,7 +7,7 @@ import java.util.List;
 
 @Getter
 public class PositionSide {
-    private Double units;
+    private BigDecimal units;
     private BigDecimal averagePrice;
     private List<String> tradeIDs;
     private BigDecimal pl;

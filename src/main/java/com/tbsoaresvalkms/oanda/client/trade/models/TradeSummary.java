@@ -14,8 +14,8 @@ public class TradeSummary {
     private BigDecimal price;
     private LocalDateTime openTime;
     private TradeState state;
-    private Double initialUnits;
-    private Double currentUnits;
+    private BigDecimal initialUnits;
+    private BigDecimal currentUnits;
     private BigDecimal realizedPL;
     private BigDecimal unrealizedPL;
     private BigDecimal averageClosePrice;

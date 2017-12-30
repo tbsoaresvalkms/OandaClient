@@ -2,6 +2,8 @@ package com.tbsoaresvalkms.oanda.client.instrument.models;
 
 import lombok.Getter;
 
+import java.math.BigDecimal;
+
 @Getter
 public class Instrument {
     private String name;
@@ -10,11 +12,11 @@ public class Instrument {
     private Integer pipLocation;
     private Integer displayPrecision;
     private Integer tradeUnitsPrecision;
-    private Double minimumTradeSize;
-    private Double maximumTrailingStopDistance;
-    private Double minimumTrailingStopDistance;
-    private Double maximumPositionSize;
-    private Double maximumOrderUnits;
-    private Double marginRate;
+    private BigDecimal minimumTradeSize;
+    private BigDecimal maximumTrailingStopDistance;
+    private BigDecimal minimumTrailingStopDistance;
+    private BigDecimal maximumPositionSize;
+    private BigDecimal maximumOrderUnits;
+    private BigDecimal marginRate;
     private InstrumentCommission commission;
 }

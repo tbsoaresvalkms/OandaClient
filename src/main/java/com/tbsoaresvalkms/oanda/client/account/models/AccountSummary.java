@@ -1,13 +1,10 @@
 package com.tbsoaresvalkms.oanda.client.account.models;
 
-import com.tbsoaresvalkms.oanda.client.order.models.Order;
-import com.tbsoaresvalkms.oanda.client.position.models.Position;
-import com.tbsoaresvalkms.oanda.client.trade.models.TradeSummary;
+import com.tbsoaresvalkms.oanda.client.instrument.models.Currency;
 import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Getter
 public class AccountSummary {
@@ -21,7 +18,7 @@ public class AccountSummary {
     private BigDecimal resettablePL;
     private LocalDateTime resettabledPLTime;
     private BigDecimal commission;
-    private Double marginRate;
+    private BigDecimal marginRate;
     private LocalDateTime marginCallEnterTime;
     private Integer marginCallExtensionCount;
     private LocalDateTime lastMarginCallExtensionTime;
@@ -37,10 +34,10 @@ public class AccountSummary {
     private BigDecimal marginCloseoutUnrealizedPL;
     private BigDecimal marginCloseoutNAV;
     private BigDecimal marginCloseoutMarginUsed;
-    private Double marginCloseoutPercent;
-    private Double marginCloseoutPositionValue;
+    private BigDecimal marginCloseoutPercent;
+    private BigDecimal marginCloseoutPositionValue;
     private BigDecimal withdrawalLimit;
     private BigDecimal marginCallMarginUsed;
-    private Double marginCallPercent;
+    private BigDecimal marginCallPercent;
     private String lastTransactionID;
 }

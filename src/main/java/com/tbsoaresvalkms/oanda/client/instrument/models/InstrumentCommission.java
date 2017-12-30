@@ -2,10 +2,12 @@ package com.tbsoaresvalkms.oanda.client.instrument.models;
 
 import lombok.Getter;
 
+import java.math.BigDecimal;
+
 @Getter
 public class InstrumentCommission {
     private String instrument;
-    private Double commission;
-    private Double unitsTraded;
-    private Double minimumCommission;
+    private BigDecimal commission;
+    private BigDecimal unitsTraded;
+    private BigDecimal minimumCommission;
 }

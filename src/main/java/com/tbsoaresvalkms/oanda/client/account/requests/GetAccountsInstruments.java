@@ -18,7 +18,15 @@ public class GetAccountsInstruments {
         return template.get(builderUrl(accountId), GetAccountsInstrumentsResponse.class).getBody();
     }
 
+    public GetAccountsInstrumentsResponse execute(String accountId, String instrumentName) {
+        return template.get(builderUrlWithParameter(accountId, instrumentName), GetAccountsInstrumentsResponse.class).getBody();
+    }
+
     private String builderUrl(String accountId) {
         return URL.concat(accountId).concat("/instruments");
+    }
+
+    private String builderUrlWithParameter(String accountId, String instrumentName) {
+        return URL.concat(accountId).concat("/instruments").concat("?instruments=").concat(instrumentName);
     }
 }

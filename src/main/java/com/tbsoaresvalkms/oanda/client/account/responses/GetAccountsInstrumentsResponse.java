@@ -1,6 +1,5 @@
 package com.tbsoaresvalkms.oanda.client.account.responses;
 
-import com.tbsoaresvalkms.oanda.client.account.models.Account;
 import com.tbsoaresvalkms.oanda.client.instrument.models.Instrument;
 import lombok.Getter;
 
