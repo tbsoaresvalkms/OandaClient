@@ -1,7 +1,6 @@
 package com.tbsoaresvalkms.oanda.client.account.requests;
 
-import com.tbsoaresvalkms.oanda.client.account.queries.AccountConfiguration;
-import com.tbsoaresvalkms.oanda.client.account.responses.GetAccountResponse;
+import com.tbsoaresvalkms.oanda.client.account.queries.AccountConfigurationBody;
 import com.tbsoaresvalkms.oanda.client.account.responses.PatchAccountsConfigurationResponse;
 import com.tbsoaresvalkms.oanda.client.core.template.OandaTemplate;
 import org.springframework.stereotype.Component;
@@ -16,7 +15,7 @@ public class PatchAccountsConfiguration {
         this.template = template;
     }
 
-    public PatchAccountsConfigurationResponse execute(String accountId, AccountConfiguration accountConfiguration) {
+    public PatchAccountsConfigurationResponse execute(String accountId, AccountConfigurationBody accountConfiguration) {
         return template.patch(builderUrl(accountId), accountConfiguration, PatchAccountsConfigurationResponse.class).getBody();
     }
 

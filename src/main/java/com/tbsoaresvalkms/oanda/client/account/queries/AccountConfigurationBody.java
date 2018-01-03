@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 @Setter
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class AccountConfiguration {
+public class AccountConfigurationBody {
     private String alias;
     @JsonSerialize(using = BigDecimalToJsonConvert.class)
     private BigDecimal marginRate;
